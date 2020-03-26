@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>D&amp;D Helper</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>A D&amp;D SRD Search Engine</h1>
+      <p>Made by A. Pedersen</p>
+      <!-- Wrap this in Div to format Login Info Later-->
+    </header>
+    <div class="search">
+      <form class="search bar" action="" method="get">
+        <div class="search-form">
+          <label for="searchtype">Search Type</label>
+          <select class="searchtype" name="searchtype" id="searchtype">
+            <option value="ability-scores">Ability Score</option>
+            <option value="skills">Skill</option>
+            <option value="proficiencies">Proficiency</option>
+            <option value="languages">Language</option>
+            <option value="classes">Class</option>
+            <option value="subclasses">Subclass</option>
+            <option value="features">Feature</option>
+            <option value="spellcasting">Spellcasting</option>
+            <option value="starting-equipment">Starting Equipment</option>
+            <option value="races">Race</option>
+            <option value="subraces">Subraces</option>
+            <option value="traits">Traits</option>
+            <option value="equipment">Equipment</option>
+            <option value="equipment-categories">Equipment Category</option>
+            <option value="weapon-properties">Weapon Property</option>
+            <option value="spells">Spell</option>
+            <option value="monsters">Monster</option>
+            <option value="conditions">Condition</option>
+            <option value="damage-types">Damage Type</option>
+            <option value="magic-schools">Magic School</option>
+          </select>
+        </div>
+        <div class="search-form">
+          <label for="search-box">Search:</label>
+          <input type="text" name="search-box" value="Str" id="searchBox">
+        </div>
+        <div class="search-form">
+          <button type="button" name="search-button"
+          id="searchButton">Search!</button> <!--should probably provide instructions-->
+        </div>
+      </form>
+    </div>
+    <div class="results" id="results">
+      <!--This is left empty for js to fill with query-->
+      <!-- <p id="resultMsg">Press Search to begin. Try the <strong>Spell</strong>, <em>Magic
+        Missle</em>.</p> -->
+    </div>
+    <div class="user-inputs">
+      <form class="favorite" action="" method="post">
+        <div class="comment-form">
+          <label for="comment">Comments:</label>
+          <textarea name="comment" rows="8" cols="80">Save comments for favorites
+          </textarea>
+        </div>
+        <div class="comment-form">
+          <button type="button" name="save" id="save">Save</button>
+          <button type="button" name="add" id="add">Add Favorite</button>
+          <button type="button" name="remove" id="remove">Remove</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
