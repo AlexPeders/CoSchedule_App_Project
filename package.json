@@ -1,0 +1,31 @@
+{
+  "name": "coschedule_app_project",
+  "version": "1.0.0",
+  "description": "(Project for job application)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexPeders/CoSchedule_App_Project.git"
+  },
+  "keywords": [
+    "(headless",
+    "API)"
+  ],
+  "author": " (A Pedersen)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexPeders/CoSchedule_App_Project/issues"
+  },
+  "homepage": "https://github.com/AlexPeders/CoSchedule_App_Project#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
