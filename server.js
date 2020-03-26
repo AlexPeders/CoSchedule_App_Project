@@ -5,7 +5,7 @@ const cors        = require('cors');
 const app = express();
 const db = require('./config/db')
 // server.js
-const port = 8000;
+const port = 3000;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cors());
 var mongoClient = new MongoClient(db.url, {useUnifiedTopology: true})
