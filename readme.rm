@@ -1,0 +1,7 @@
+This project is to create a locally hosted webpage which will access the open
+Dungeons and Dragons 5edition SRD.
+
+The user will be able to search items, spells, classes, and monsters.
+The user can also save their favorite items for easy look ups.
+
+To Run: Simply open the HTML file in a web browser and start searching.
