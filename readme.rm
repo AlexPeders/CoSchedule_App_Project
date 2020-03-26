@@ -1,7 +1,32 @@
-This project is to create a locally hosted webpage which will access the open
-Dungeons and Dragons 5edition SRD.
+This project is to create a headless API which can save your favorite song lyrics.
+The API is linked to the database at https://lyricsovh.docs.apiary.io/#
 
-The user will be able to search items, spells, classes, and monsters.
-The user can also save their favorite items for easy look ups.
+The API is also linked to a small, persistent Mongodb (credentials are included).
+run: "npm run dev" to launch server.js
 
-To Run: Simply open the HTML file in a web browser and start searching.
+This headless API is fully functional with crud operations for saving favorites with the format:
+{
+"artist": "Some Artist"
+"song": "Song Title"
+"lyrics: "The Lyrics for your favorite song"
+"comment": "User entered comments"
+}
+Requests must be sent to "http://localhosting:5000/songs" to access favorite information.
+Requests to search the source data base are processed through "http://localhost:5000/lyrics" in the form:
+{
+  "artist": "Some Artist"
+  "song": "Song Title"
+}
+
+This API was tested using the postman program to send http requests to the server in the "x-www-form-urlencoded" format
+
+An attempt was made to create an Angular v9 application to serve as a front end for this application. The results are included in this repository. The queries (currently in hard-coded format) to the API resulted in empty body elements on the API side. A solution was not found. The query results can best be observed on "localHost:4200/lyrics".
+
+A manual HTML and Vue front-end were attempted, but did not perform due to launching issues with two locally hosted servers (both jumped to server.js when launched). 
+Pretty interfaces were on the todo list after connections were solid, these issues were not addressed.
+
+As a personal reflection:
+I really enjoyed working on this project. As I am trying to make the jump from electrical engineer, I was seeing all of this for the first time. My two-day course in HTML only built confidence that I could succeed on this project. I think I may keep working to try for a complete system some day.
+Thank you for the opportunity to learn new tools, I am always excited to face a challenge.
+
+As for stats: I worked on this directly for 24hrs, most of which was learning new things, not programming. I spent 24hours before that learning the basics of HTML, CSS, Javascript, JSON, and accessing APIs.
