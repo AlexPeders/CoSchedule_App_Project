@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Http, Response } from "@angular/http";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
@@ -8,20 +8,20 @@ import { Http, Response } from "@angular/http";
 })
 export class AppComponent {
   title = 'SongPrinter';
-  constructor(private http: Http){
-    console.log('Hello fellow user');
+  /*constructor(private http: HttpClient){
+    //onsole.log('Hello fellow user');
     this.getContacts();
     this.getData();
-  }
+  }*/
 
-  getData(){
+/*getData(){
     return this.http.get(this.apiUrl)
-      .map((res:Response)=> res.json())
+      .then((res:Response)=> res.json())
   }
   getContacts(){
     this.getData().subscribe(data=> {
       console.log(data);
       this.data = data
     })
-  }
+  }*/
 }

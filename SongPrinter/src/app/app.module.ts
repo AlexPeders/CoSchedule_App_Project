@@ -2,9 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+//import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
-//import { AppRoutingModule} from './app-routing.module';
+import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LyricsComponent } from './components/lyrics/lyrics.component';
 
@@ -16,9 +16,9 @@ import { LyricsComponent } from './components/lyrics/lyrics.component';
   imports: [
     BrowserModule,
     FormsModule,
-    //AppRoutingModule,
-    HttpClientModule,
-    NgbModule
+    AppRoutingModule,
+    HttpClientModule
+    //NgbModule
   ],
   providers: [AppComponent],
   bootstrap: [AppComponent]

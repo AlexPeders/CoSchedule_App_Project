@@ -7,13 +7,18 @@ import { LyricService } from './../../services/lyric.service'
   styleUrls: ['./lyrics.component.css']
 })
 export class LyricsComponent implements OnInit {
-  lyrics;
+  lyric
   constructor(
     private lyricService: LyricService,
   ) { }
 
   ngOnInit() {
-    this.lyrics = this.lyricService.getLyrics();
+    console.debug('I exist')
+    this.lyricService.getLyrics("Sting", "Fields of Gold")
+      .subscribe((data)=>{
+        console.log(data);
+        this.lyric = data['lyrics'];
+    });
   }
 
 }
