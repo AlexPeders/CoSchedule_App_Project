@@ -17,7 +17,7 @@ function handleErrors(response){
   }
   return response.json();
 }
-document.getElementById('searchButton').onclick = function(){
+document.getElementById('searchButton').onclick = function(){//This needs to be in response to a call from HTML
   //These need to be inside callback from searchButton
   const queryType = document.getElementById('searchtype').value
   const queryValue = document.getElementById('searchBox').value.toLowerCase().replace(/\s+/g, '-')
